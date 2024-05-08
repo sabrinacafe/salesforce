@@ -1,8 +1,8 @@
 import React from "react";
-import FeatureCard from "./TrailheadCard"; // Garanta que o caminho esteja correto.
-import Icon1 from "@/public/images/artificial-intelligence.png";
-import Icon2 from "@/public/images/user-interface.png";
-import Icon3 from "@/public/images/medal.png";
+import FeatureCard from "./TrailheadCard"; 
+import Icon1 from "../../../../public/assets/Trailhead/artificial-intelligence.png";
+import Icon2 from "../../../../public/assets/Trailhead/user-interface.png";
+import Icon3 from "../../../../public/assets/Trailhead/medal.png";
 
 const FeaturesSection = () => {
   return (
