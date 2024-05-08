@@ -23,7 +23,7 @@ const Nav = ({ openNav }: Props) => {
             <Link href="/SobreNos">Sobre nós</Link>
           </li>
           <li className="text-[17px] cursor-pointer hover:text-[#00A1E0] transition-all duration-200">
-            <Link href="/ProductPage">Produtos</Link>
+            <Link href="/Produtos">Produtos</Link>
           </li>
           <li className="text-[17px] cursor-pointer hover:text-[#00A1E0] transition-all duration-200">
             <Link href="/Suporte">Suporte</Link>
