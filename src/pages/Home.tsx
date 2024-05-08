@@ -2,8 +2,8 @@ import React from 'react';
 import Hero from '@/app/components/Hero/Hero';
 import CRM from '@/app/components/CRM/Crm';
 import Caracteristics from '@/app/components/CaracteristcsCrm/CaracteristicsCrm';
-import Features from '@/app/components/Trailhead/Trailhead';
-import Company from '@/app/components/Custumers/Custumers';
+import Trailhead from '@/app/components/Trailhead/Trailhead';
+import Custumers from '@/app/components/Custumers/Custumers';
 
 
 const Home = () => {
@@ -12,8 +12,8 @@ const Home = () => {
       <Hero/>
       <CRM/>
       <Caracteristics/>
-      <Features/>
-      <Company/>
+      <Trailhead/>
+      <Custumers/>
     </div>
   )
 }
