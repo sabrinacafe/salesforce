@@ -2,7 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
-import CrmImg from '@/public/images/crm.svg'; // Ajuste o caminho conforme necessário
+import CrmImg from '../../../../public/assets/CRM/crm.svg'; // Ajuste o caminho conforme necessário
 
 const Crm: React.FC = () => {
     const crmContentRef = useRef<HTMLDivElement>(null);
