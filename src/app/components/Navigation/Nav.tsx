@@ -12,16 +12,13 @@ interface Props {
 
 const Nav = ({ openNav }: Props) => {
   return (
-    <div className="h-[12vh] bg-white shadow-md ">
+    <>
+    <nav className="h-[12vh] bg-white shadow-md ">
       <div className="w-[85%] flex items-center justify-between mx-auto h-[12vh]">
-        <Image src={LogoImg} alt="LogoSalesForce" width={250} height={250}/>
+      <Link href="/">
+          <Image src={LogoImg} alt="LogoSalesForce" width={200} height={200}/>
+        </Link>
         <ul className="hidden lg:flex items-center space-x-10">
-          <li className="text-[17px] cursor-pointer hover:text-[#00A1E0] transition-all duration-200">
-            <Link href="/">Home</Link>
-          </li>
-          <li className="text-[17px] cursor-pointer hover:text-[#00A1E0] transition-all duration-200">
-            <Link href="/SobreNos">Sobre nós</Link>
-          </li>
           <li className="text-[17px] cursor-pointer hover:text-[#00A1E0] transition-all duration-200">
             <Link href="/Produtos">Produtos</Link>
           </li>
@@ -29,7 +26,7 @@ const Nav = ({ openNav }: Props) => {
             <Link href="/Suporte">Suporte</Link>
           </li>
           <li className="text-[17px] cursor-pointer hover:text-[#00A1E0] transition-all duration-200">
-            <Link href="/">Acessibilidade</Link>
+            <Link href="/SobreNos">Sobre nós</Link>
           </li>
         </ul>
         <div className="flex items-center space-x-2 md:space-x-5">
@@ -41,7 +38,8 @@ const Nav = ({ openNav }: Props) => {
           />
         </div>
       </div>
-    </div>
+    </nav>
+  </>    
   );
 };
 
