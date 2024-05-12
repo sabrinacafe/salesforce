@@ -4,7 +4,7 @@ import ProductButton from "../ProductButtons/ProductButtons";
 const produtos = [
     { icon: "/assets/ProductsExemples/ia.svg", label: "IA" },
     { icon: "/assets/ProductsExemples/sales-day.svg", label: "Vendas" },
-    { icon: "/assets/ProductsExemples/integration-day.svg", label: "Atendimento ao Cliente" },
+    { icon: "/assets/ProductsExemples/service-day.svg", label: "Atendimento ao Cliente" },
     { icon: "/assets/ProductsExemples/marketing-day.svg", label: "Marketing" },
     { icon: "/assets/ProductsExemples/commerce-day.svg", label: "Commerce" },
     { icon: "/assets/ProductsExemples/cloud.svg", label: "Nuvem de Dados" },
@@ -18,11 +18,11 @@ const produtos = [
     { icon: "/assets/ProductsExemples/sucess-day.svg", label: "Sucesso" }
 ];
 
-const Produtos: React.FC = () => {
+const ProdutosGrid = () => {
     return (
         <div className="pt-10 pb-10 bg-white">
             <h2 className="text-2xl font-bold text-center mb-6">Selecione o Produto</h2>
-            <div className="flex flex-wrap justify-center items-center gap-6">
+            <div className="w-[70%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
                 {produtos.map((produto, index) => (
                     <ProductButton key={index} icon={produto.icon} label={produto.label} />
                 ))}
@@ -31,4 +31,5 @@ const Produtos: React.FC = () => {
     );
 };
 
-export default Produtos;
+export default ProdutosGrid;
+
