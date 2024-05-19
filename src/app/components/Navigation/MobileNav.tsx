@@ -19,7 +19,7 @@ const MobileNav = ({ nav, closeNav }: Props) => {
       />
       <ul className=" relative z-[201] space-y-10 flex flex-col justify-center h-[100%] items-center ">
         <li className="text-[25px] cursor-pointer text-white hover:text-yellow-300 transition-all duration-200">
-            <Link href="/Produtos">Produtos</Link>
+            <Link href="/">Produtos</Link>
           </li>
         <li className="text-[25px] cursor-pointer text-white hover:text-yellow-300 transition-all duration-200">
           <Link href="/">Suporte</Link>

@@ -2,7 +2,7 @@ import React from 'react';
 
 interface ButtonGreenProps {
   text: string;
-  className?: string; // Prop opcional que permite passar classes adicionais.
+  className?: string;
 }
 
 const ButtonGreen: React.FC<ButtonGreenProps> = ({ text, className }) => (
