@@ -4,6 +4,8 @@ import CRM from '@/app/components/CRM/Crm';
 import Caracteristics from '@/app/components/CaracteristcsCrm/CaracteristicsCrm';
 import Trailhead from '@/app/components/Trailhead/Trailhead';
 import Custumers from '@/app/components/Custumers/Custumers';
+import Opcoes from '@/app/components/OpcoesProdutos/OpcoesProdutos'
+
 
 
 const Home = () => {
@@ -14,6 +16,7 @@ const Home = () => {
       <Caracteristics/>
       <Trailhead/>
       <Custumers/>
+      <Opcoes/>
     </div>
   )
 }
