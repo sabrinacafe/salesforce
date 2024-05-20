@@ -1,12 +1,15 @@
-import React from "react";
-import Home from "../../pages/Home";
+// src/app/page.tsx
+import Home from '../../pages/Home';
 
-const HomePage = () => {
-  return (
-    <div>
-      <Home/>
-    </div>
-  );
+export const metadata = {
+  title: "Salesforce",
+  description: "Novo portal focado em acessibilidade",
 };
 
-export default HomePage;
+export default function Page() {
+  return (
+    <div>
+      <Home />
+    </div>
+  );
+}

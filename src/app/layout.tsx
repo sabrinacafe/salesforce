@@ -1,20 +1,15 @@
-// app/layout.tsx
-import type { Metadata } from "next";
+"use client";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import ResponsiveNav from "./components/Navigation/ResponsiveNav";
 import Footer from "./components/Footer/Footer";
-import WatsonChat from "../app/components/WatsonChat"
+import WatsonChat from "./components/WatsonChat";
+import VLibras from 'vlibras-nextjs';
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700", "800"],
   subsets: ["latin"],
 });
-
-export const metadata: Metadata = {
-  title: "Salesforce",
-  description: "Novo portal focado em acessibilidade",
-};
 
 export default function RootLayout({
   children,
@@ -28,6 +23,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <WatsonChat />
+        <VLibras forceOnload />
       </body>
     </html>
   );
