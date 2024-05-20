@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Transition } from '@headlessui/react';
+import salesforceImage from '../../../public/assets/Salesforce360/360_salesforce.png';
 
 const Customer360: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -15,7 +16,7 @@ const Customer360: React.FC = () => {
     <div className="min-h-screen bg-blue-500">
       <header className="relative w-full h-96 md:h-[60vh] overflow-hidden">
         <Image
-          src="../../../../public/assets/Salesforce360/360_salesforce.png" // Atualize o caminho da imagem
+          src={salesforceImage}
           alt="Header Image"
           layout="fill"
           objectFit="cover"
