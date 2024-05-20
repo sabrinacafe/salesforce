@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-[80%] mx-auto mt-[1rem] text-[15px] opacity-75">
-        Copyright © 2024 by Mind Makers
+        Copyright © 2024 by Mind Makers LUIS HENRIQUE RM 552692 SABRINA CAFÉ RM 553698 JOÃO PEDRO RM 553698
       </div>
     </div>
   );
