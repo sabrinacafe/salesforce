@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface Props {
@@ -23,9 +24,11 @@ const FeatureCard: React.FC<Props> = ({ image, title, description }) => {
       <p className="mt-[1rem] text-black opacity-90 text-[15px]">
         {description}
       </p>
-      <p className="mt-[1.4rem] text-blue-600 font-[500] cursor-pointer hover:text-blue-800">
-        Comece a aprender
-      </p>
+      <Link href="/Trailblazer" legacyBehavior>
+        <a className="mt-[1.4rem] text-blue-600 font-[500] cursor-pointer hover:text-blue-800">
+          Comece a aprender
+        </a>
+      </Link>
     </div>
   );
 };
