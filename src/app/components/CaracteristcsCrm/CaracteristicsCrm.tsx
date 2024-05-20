@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import CircleImg from '../../../../public/assets/CaracteristicsCrm/Circulo.png'; // Ajuste o caminho conforme necessário
+import CircleImg from '../../../../public/assets/CaracteristicsCrm/Circulo.png';
 
 const Caracteristics: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -13,7 +13,7 @@ const Caracteristics: React.FC = () => {
 
     return (
         <div className="bg-white py-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-center mx-auto max-w-7xl px-4">
+            <div className="w-full max-w-7xl px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center mx-auto">
                 <div>
                     <h2 className="text-3xl md:text-4xl text-[#032D60] mb-4">
                         O que é a Salesforce faz?
@@ -24,7 +24,7 @@ const Caracteristics: React.FC = () => {
                                 key={index}
                                 className={`absolute top-0 transition-all duration-700 ease-in-out transform ${
                                     index === activeIndex ? "translate-y-0 opacity-100" : "-translate-y-6 opacity-0"
-                                } text-lg md:text-base text-black font-light mb-4 w-full`}
+                                } text-base md:text-lg text-black font-light mb-4 w-full`}
                             >
                                 {text}
                             </p>
@@ -40,8 +40,8 @@ const Caracteristics: React.FC = () => {
                         ))}
                     </div>
                 </div>
-                <div className="relative mt-8 md:mt-0">
-                    <Image src={CircleImg} alt="about Salesforce" width={500} height={500} />
+                <div className="relative mt-8 md:mt-0 flex justify-center md:justify-end">
+                    <Image src={CircleImg} alt="about Salesforce" width={500} height={500} className="w-full max-w-md md:max-w-none" />
                 </div>
             </div>
         </div>
@@ -49,4 +49,3 @@ const Caracteristics: React.FC = () => {
 };
 
 export default Caracteristics;
-

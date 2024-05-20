@@ -13,12 +13,12 @@ interface Props {
 const Nav = ({ openNav }: Props) => {
   return (
     <>
-      <nav className="h-[12vh] bg-white shadow-md ">
-        <div className="w-[85%] flex items-center justify-between mx-auto h-[12vh]">
+      <nav className="h-[12vh] bg-white shadow-md w-full fixed top-0 z-50">
+        <div className="w-full max-w-7xl flex items-center justify-between mx-auto h-[12vh] px-4">
           <Link href="/">
-            <Image src={LogoImg} alt="LogoSalesForce" width={200} height={200}/>
+            <Image src={LogoImg} alt="LogoSalesForce" width={150} height={50} />
           </Link>
-          <ul className="hidden lg:flex items-center space-x-10">
+          <ul className="hidden lg:flex items-center space-x-6">
             <li className="text-[17px] cursor-pointer hover:text-[#00A1E0] transition-all duration-200">
               <Link href="/Produtos">Produtos</Link>
             </li>
@@ -43,7 +43,7 @@ const Nav = ({ openNav }: Props) => {
           </div>
         </div>
       </nav>
-  </>    
+    </>
   );
 };
 

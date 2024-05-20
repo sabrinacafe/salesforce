@@ -20,14 +20,14 @@ const produtos = [
 
 const ProdutosGrid = () => {
   return (
-      <div className="pt-10 pb-10 bg-white">
-          <h2 className="text-2xl font-bold text-center mb-6">Selecione o Produto</h2>
-          <div className="w-[70%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-              {produtos.map((produto, index) => (
-                  <ProductButton key={index} icon={produto.icon} label={produto.label} />
-              ))}
-          </div>
+    <div className="bg-white pt-20 pb-20">
+      <h2 className="text-2xl font-bold text-center mt-20 mb-10">Selecione o Produto:</h2> 
+      <div className="w-[70%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+        {produtos.map((produto, index) => (
+          <ProductButton key={index} icon={produto.icon} label={produto.label} />
+        ))}
       </div>
+    </div>
   );
 };
 

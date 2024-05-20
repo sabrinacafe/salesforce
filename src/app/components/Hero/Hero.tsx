@@ -4,19 +4,19 @@ import AnalyticsImg from "../../../../public/assets/Hero/analytics.svg";
 
 const Hero = () => {
   return (
-    <div className="h-[70vh] lg:h-[88vh] md:h-[80vh] sm:h-[75vh] flex items-center flex-col justify-center">
-      <div className="grid grid-cols-1 lg:grid-cols-5 items-center w-[80%] mx-auto">
-        <div className="col-span-2 mr-8 lg:mr-16">
+    <div className="min-h-screen flex items-center justify-center mt-40"> 
+      <div className="w-full max-w-7xl px-6 md:px-12 grid grid-cols-1 lg:grid-cols-5 items-center gap-8">
+        <div className="col-span-2 mt-12 md:mt-0"> 
           <h1
             data-aos="fade-right"
-            className="text-[27px] md:text-[35px] lg:text-[40px] mb-[1rem] font-bold text-[#02073e] leading-[2.4rem] md:leading-[4rem]"
+            className="text-2xl md:text-3xl lg:text-4xl mb-4 font-bold text-[#02073e] leading-tight md:leading-normal"
           >
             Revolucione a Gestão de Clientes com a Salesforce
           </h1>
           <p
             data-aos="fade-left"
             data-aos-delay="200"
-            className="md:text-[17px] text-[15px] mb-[2rem] text-black opacity-90 font-[400]"
+            className="md:text-lg text-base mb-6 text-black opacity-90 font-light"
           >
             Com a Salesforce, aprimore sua capacidade de resposta às demandas do mercado e tome decisões embasadas em dados concretos. 
             Nossas ferramentas de CRM são o motor para um crescimento robusto e contínuo, pavimentando o caminho para o sucesso em um cenário de negócios cada vez mais competitivo. 
@@ -26,9 +26,9 @@ const Hero = () => {
         <div
           data-aos="left"
           data-aos-delay="600"
-          className="col-span-3 hidden sm:block ml-8 lg:ml-16" 
+          className="col-span-3 flex justify-center lg:justify-end mt-12 lg:mt-0" 
         >
-            <Image src={AnalyticsImg} alt="Analytics" width={500} height={500} />
+            <Image src={AnalyticsImg} alt="Analytics" width={500} height={500} className="w-full max-w-md lg:max-w-none" />
         </div>
       </div>
     </div>
