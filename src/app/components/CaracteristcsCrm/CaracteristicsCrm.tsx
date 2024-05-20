@@ -16,9 +16,9 @@ const Caracteristics: React.FC = () => {
             <div className="w-full max-w-7xl px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center mx-auto">
                 <div>
                     <h2 className="text-3xl md:text-4xl text-[#032D60] mb-4">
-                        O que é a Salesforce faz?
+                        O que a Salesforce faz?
                     </h2>
-                    <div className="relative overflow-hidden" style={{ minHeight: "6rem" }}>
+                    <div className="relative overflow-hidden" style={{ minHeight: "12rem" }}> 
                         {paragraphs.map((text, index) => (
                             <p
                                 key={index}
