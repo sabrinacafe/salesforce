@@ -2,8 +2,9 @@
 
 import React from 'react';
 import Image from 'next/image';
-import ChatBotImage from '../../../public/assets/support/ChatBot.png';
-import SupportImage from '../../../public/assets/support/support.jpg';
+import chatBotImage from '../../../public/assets/support/ChatBot.png';
+import supportImage from '../../../public/assets/support/support.jpg';
+
 
 const Suporte: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const Suporte: React.FC = () => {
         <p className="text-xl text-black mb-4">0800 891 1887</p>
 
         <div className="mb-8 w-full">
-          <Image src={SupportImage} alt="Support Image" layout="responsive" className="rounded-md" />
+          <Image src={supportImage} alt="Support Image" layout="responsive" className="rounded-md" />
         </div>
 
         <h2 className="text-2xl font-semibold text-[#032D60]">Utilize o nosso chatbot para tirar suas principais dúvidas:</h2>
@@ -24,7 +25,7 @@ const Suporte: React.FC = () => {
         </p>
 
         <div className="mb-8 w-full">
-          <Image src={ChatBotImage} alt="ChatBot Image" layout="responsive" className="rounded-md" />
+          <Image src={chatBotImage} alt="ChatBot Image" layout="responsive" className="rounded-md" />
         </div>
       </div>
     </div>
