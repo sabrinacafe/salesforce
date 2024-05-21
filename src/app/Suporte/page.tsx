@@ -2,8 +2,8 @@
 
 import React from 'react';
 import Image from 'next/image';
-import chatBotImage from '../../../public/assets/support/ChatBot.png';
-import supportImage from '../../../public/assets/support/support.jpg';
+import chatBotImage from '/assets/support/ChatBot.png';
+import supportImage from '/assets/support/support.jpg';
 
 
 const Suporte: React.FC = () => {
